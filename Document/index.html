@@ -1,0 +1,560 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>Doctor App - find best doctor and book appointment</title>
+	
+	<meta name="description" content="Dr. app with full name is Doctor Application which enables you to find the best doctors and book instant appointments. You can read details about the doctor such as qualifications, consultation fees, see feedback from other patients and instantly book appointments right from your smartphone. 
+So you have the widest range of options while choosing the most suitable doctor.">
+	<meta name="author" content="way web solution">
+	<meta name="copyright" content="way web solution">
+	<meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
+	<meta name="date" content="2015-07-20T00:00:00+02:00">
+	
+	<link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+	
+	
+	
+	<script src="assets/js/jquery.js"></script>
+	
+	<script src="assets/js/jquery.scrollTo.js"></script>
+	<script src="assets/js/jquery.easing.js"></script>
+	
+	<script>document.createElement('section');var duration='500',easing='swing';</script>
+	<script src="assets/js/script.js"></script>
+	
+	<style>
+		html{background-color:#EEEEEE;color:#383838;}
+		::-moz-selection{background:#333636;color:#00DFFC;}
+		::selection{background:#333636;color:#00DFFC;}
+		#documenter_sidebar #documenter_logo{background-image:url(assets/images/image_1.png);}
+		a{color:#008C9E;}
+		.btn {
+			border-radius:3px;
+		}
+		.btn-primary {
+			  background-image: -moz-linear-gradient(top, #008C9E, #006673);
+			  background-image: -ms-linear-gradient(top, #008C9E, #006673);
+			  background-image: -webkit-gradient(linear, 0 0, 0 008C9E%, from(#343838), to(#006673));
+			  background-image: -webkit-linear-gradient(top, #008C9E, #006673);
+			  background-image: -o-linear-gradient(top, #008C9E, #006673);
+			  background-image: linear-gradient(top, #008C9E, #006673);
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#008C9E', endColorstr='#006673', GradientType=0);
+			  border-color: #006673 #006673 #bfbfbf;
+			  color:#FFFFFF;
+		}
+		.btn-primary:hover,
+		.btn-primary:active,
+		.btn-primary.active,
+		.btn-primary.disabled,
+		.btn-primary[disabled] {
+		  border-color: #008C9E #008C9E #bfbfbf;
+		  background-color: #006673;
+		}
+		hr{border-top:1px solid #D4D4D4;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ul a{background-color:#343838;color:#FFFFFF;}
+		#documenter_sidebar ul a{-webkit-text-shadow:1px 1px 0px #494F4F;-moz-text-shadow:1px 1px 0px #494F4F;text-shadow:1px 1px 0px #494F4F;}
+		#documenter_sidebar ul{border-top:1px solid #212424;}
+		#documenter_sidebar ul a{border-top:1px solid #494F4F;border-bottom:1px solid #212424;color:#FFFFFF;}
+		#documenter_sidebar ul a:hover{background:#333636;color:#00DFFC;border-top:1px solid #333636;}
+		#documenter_sidebar ul a.current{background:#333636;color:#00DFFC;border-top:1px solid #333636;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+	
+</head>
+<body class="documenter-project-doctor-app">
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ul id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+				
+			<li><a href="#about_app" title="About App">About App</a></li>
+			<li><a href="#features" title="Features">Features</a></li>
+            <li><a href="#videos" title="Features">Video Tutorial</a></li>
+			<li><a href="#app_source_files" title="App Source files">App Source files</a></li>
+			<li><a href="#tools_required" title="Tools required">Tools required</a></li>
+			<li><a href="#import_app" title="Import App">Import App</a></li>
+			<li><a href="#configure_app" title="Configure App">Configure App</a></li>
+			<li><a href="#gcm_configuration" title="GCM Configuration">GCM Configuration</a></li>
+			<li><a href="#configure_server_site" title="Configure Server Site">Configure Server Site</a></li>
+			<li><a href="#how_can_use_server_site" title="How can use Server site">How can use Server site</a></li>
+			<li><a href="#special_thanks" title="Special Thanks">Special Thanks</a></li>
+			<li><a href="#support" title="Support">Support</a></li>
+
+		</ul>
+		<div id="documenter_copyright">Copyright way web solution 2015<br>
+		made with the <a href="http://rxa.li/documenter">Documenter v2.0</a> 
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover">
+	<h1>Doctor App</h1>
+	<h2>find best doctor and book appointment</h2>
+	<div id="documenter_buttons">
+		<a href="http://gujjurocks/doctor" class="btn btn-primary btn-large">Demo</a> <a href="http://waywebsolution.com" class="btn btn-large">Author</a> 
+	</div>
+	<hr>
+	<ul>
+	<li>created: 07/20/2015</li>
+	<li>latest update: 07/20/2015</li>
+	<li>by: way web solution</li>
+	<li><a href=""></a></li>
+	<li>email: <a href="mailto:&#105;&#110;&#102;&#111;&#64;&#119;&#97;&#121;&#119;&#101;&#98;&#115;&#111;&#108;&#117;&#116;&#105;&#111;&#110;&#46;&#99;&#111;&#109;">&#105;&#110;&#102;&#111;&#64;&#119;&#97;&#121;&#119;&#101;&#98;&#115;&#111;&#108;&#117;&#116;&#105;&#111;&#110;&#46;&#99;&#111;&#109;</a></li>
+	</ul>
+	<p>Dr. app with full name is Doctor Application which enables you to find the best doctors and book instant appointments. You can read details about the doctor such as qualifications, consultation fees, see feedback from other patients and instantly book appointments right from your smartphone. 
+So you have the widest range of options while choosing the most suitable doctor.</p>
+	</section>
+	
+	<section id="about_app">
+	<div class="page-header"><h3>About App</h3><hr class="notop"></div>
+<div>
+	Dr. app with full name is Doctor Application which enables you to find the best doctors and book instant appointments. You can read details about the doctor such as qualifications, consultation fees, see feedback from other patients and instantly book appointments right from your smartphone.&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	So you have the widest range of options while choosing the most suitable doctor.</div>
+<div>
+	&nbsp;</div>
+<div>
+	<div>
+		You can find doctors who specialize in Dental Care, Skin Care, Mental Health, Ear Nose Throat Care, Pregnancy, Sexologists, Spas &amp; Wellness centres, Thyroid, Ayurveda, Heart, Eyes/Ophthalmology, Children/Paediatrics, Homeopathy, Hair Transplant, Obesity/Weight Loss, Diabetes and many more.</div>
+</div>
+<p>
+	&nbsp;</p>
+</section>
+<section id="features">
+	<div class="page-header"><h3>Features</h3><hr class="notop"></div>
+<ul>
+	<li>
+		- Find the best doctors in major cities.</li>
+	<li>
+		- Search for doctor based on your problem. Doctors are listed Classified.&nbsp;</li>
+	<li>
+		- Search for doctors based on their Specialty, Clinic or doctor name.</li>
+	<li>
+		- Listings based on area, availability and consultation fees</li>
+	<li>
+		- Appointment booking with instant confirmation.</li>
+	<li>
+		- View previously booked appointments.</li>
+	<li>
+		- Save your appointments.</li>
+	<li>
+		- View doctor profiles with qualifications, awards and more information</li>
+	<li>
+		- See clinic details such as timings, consultation fees, clinic Address and photos</li>
+	<li>
+		- Use our in-built navigation feature to find turn by turn directions to the doctor&rsquo;s clinic.</li>
+	<li>
+		- Provide feedback on the doctor and clinic experience post your appointment.</li>
+	<li>
+		- Create a patient account with a simple and private FaceBook sign up.</li>
+</ul>
+</section>
+<section id="videos">
+	<div class="page-header"><h3>Video Tutorial</h3><hr class="notop"></div>
+    <h4>Doctor App - Find Best Doctor Configuration Part 1 </h4>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Kn1PmF0ZjMc" frameborder="0" allowfullscreen></iframe>
+    <h4>Doctor App - Find Best Doctor Configuration Part 2 </h4>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/h5NIXwLReQU" frameborder="0" allowfullscreen></iframe>
+    <h4>Doctor App - Find Best Doctor Configuration Part 3 </h4>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/eCvhBH0PA6Q" frameborder="0" allowfullscreen></iframe>
+    <h4>Doctor App - Find Best Doctor Configuration Part 4 </h4>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/avREOH8q92A" frameborder="0" allowfullscreen></iframe>
+</section>
+<section id="app_source_files">
+	<div class="page-header"><h3>App Source files</h3><hr class="notop"></div>
+<p>
+	We are providing you app related source that are used to develope Doctor app. When you donwload source from codecanyon you will get following folders in zip file.</p>
+<p>
+	&nbsp;</p>
+<p>
+	Doctor App 1.1.zip contains</p>
+<ul>
+	<li>
+		Doctor App</li>
+	<li>
+		Document</li>
+	<li>
+		Server Site</li>
+	<li>
+		readme.txt</li>
+</ul>
+<p>
+	&nbsp;</p>
+<p>
+	Doctor App &nbsp;[Folder]</p>
+<ul>
+	<li>
+		CircularImageView &nbsp;[ Donwload this lib from https://github.com/Pkmmte/CircularImageView&nbsp;]</li>
+	<li>
+		Dr App &nbsp;[Complete Android App]</li>
+	<li>
+		FacebookSDK [ Download lib from https://developers.facebook.com/docs/ios/downloads &nbsp;- Facebook_SDK_3.2&nbsp;]</li>
+</ul>
+<p>
+	&nbsp;</p>
+<p>
+	Document&nbsp;</p>
+<ul>
+	<li>
+		Help file</li>
+</ul>
+<p>
+	&nbsp;</p>
+<p>
+	Server Site&nbsp;</p>
+<ul>
+	<li>
+		Source &nbsp;[ PHP server code that you need to upload at your server ]</li>
+	<li>
+		doctor.sql [ Import Sql file to your database ]</li>
+</ul>
+</section>
+<section id="tools_required">
+	<div class="page-header"><h3>Tools required</h3><hr class="notop"></div>
+<p>
+	For running android source of Doctor app you required following tools.</p>
+<ol>
+	<li>
+		Eclips &nbsp; [ Download from https://eclipse.org/downloads/&nbsp;]</li>
+	<li>
+		Android SDK &nbsp;[ Download from https://developer.android.com/sdk/index.html&nbsp;]</li>
+</ol>
+<p>
+	for more instruction search how can install SDK to eclips. and follow the link&nbsp;</p>
+<p>
+	http://developer.android.com/sdk/installing/installing-adt.html</p>
+</section>
+<section id="import_app">
+	<div class="page-header"><h3>Import App</h3><hr class="notop"></div>
+<p>
+	There are several easy step to import project into Eclips.&nbsp;</p>
+<p>
+	Step 1 : Open Eclips and select workspace and then click on &nbsp;Menu &gt; File &gt; New &gt; Other</p>
+<p>
+	<img alt="" src="assets/images/image_12.png" style="width: 100%;"></p>
+<p>
+	&nbsp;</p>
+<p>
+	Step 2 : Select &nbsp;Android &gt; Android project from existing code &nbsp; &nbsp;from opend dialog box.</p>
+<p>
+	<img alt="" src="assets/images/image_14.png" style="width: 100%;"></p>
+<p>
+	&nbsp;</p>
+<p>
+	Step 3 : &nbsp;Select Project Foder from &nbsp; &nbsp;&quot;Doctor App&quot;</p>
+<p>
+	<img alt="" src="assets/images/image_15.png" style="width: 100%;"></p>
+<p>
+	&nbsp;</p>
+<p>
+	Step 4 : &nbsp;Select Check all Existing project in package and also &nbsp;checked &quot;Copy project into workspace&quot;</p>
+<p>
+	<img alt="" src="assets/images/image_16.png" style="width: 100%;"></p>
+<p>
+	&nbsp;</p>
+<p>
+	This will complete process of import after import complte you can see some errors with red simbol but do not worry about it.&nbsp;</p>
+<p>
+	It required some library that are listed bellow&nbsp;</p>
+<ul>
+	<li>
+		appcompact_v7</li>
+	<li>
+		google_play_service_lib</li>
+</ul>
+<p>
+	&nbsp;</p>
+<p>
+	Both are required librady you must import it.&nbsp;</p>
+<p>
+	Location of both librearies are :&nbsp;</p>
+<ul>
+	<li>
+		android-sdk-windows\extras\android\support\v7\appcompat</li>
+	<li>
+		android-sdk-windows\extras\google\google_play_services\libproject\google-play-services_lib</li>
+</ul>
+<p>
+	If this libraries are not available at given path. then update Android SDK</p>
+<p>
+	Import Libreary as like do process above just choose given path.</p>
+<p>
+	<img alt="" src="assets/images/image_17.png" style="width: 100%;"></p>
+<p>
+	<img alt="" src="assets/images/image_18.png" style="width: 100%;"></p>
+<p>
+	&nbsp;</p>
+<p>
+	After import complete of library. now time to attached libreary to project...</p>
+<p>
+	&nbsp;</p>
+<p>
+	Add &nbsp;&quot;appcompact_v7&quot; &nbsp;library to &quot;Facebook SDK&quot;</p>
+<p>
+	Right click on &quot;FacebookSDK&quot; &nbsp;select &quot;Properties&quot;</p>
+<p>
+	<img alt="" src="assets/images/image_19.png" style="width: 100%;"></p>
+<p>
+	&nbsp;</p>
+<p>
+	Choose &quot;Android&quot; and click on &nbsp;&quot;ADD&quot; in opend dialogue box and select &nbsp;library.</p>
+<p>
+	<img alt="" src="assets/images/image_20.png" style="width: 100%;"></p>
+<p>
+	&nbsp;</p>
+<p>
+	The same way Add Library to &quot;Dr App&quot;. &nbsp;Right click on Dr App and select &nbsp;&quot;Properties&quot; and add all required libtraries listed in bellow image</p>
+<p>
+	<img alt="" src="assets/images/image_13.png" style="width: 100%;"></p>
+<p>
+	&nbsp;</p>
+<p>
+	Now you got error free imported project.&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+</section>
+<section id="configure_app">
+	<div class="page-header"><h3>Configure App</h3><hr class="notop"></div>
+<p>
+	After using app you need little configuration with it.&nbsp;</p>
+<p>
+	<img alt="" src="assets/images/image_3.png" style="width: 100%;"></p>
+<p>
+	&nbsp;</p>
+<p>
+	Edit file &nbsp;Dr App &gt; src &gt; appconfig &gt; ConstValue.java&nbsp;</p>
+<p>
+	Change &nbsp;&quot;site_url&quot; &nbsp;with your URL &nbsp;</p>
+<p>
+	example : &nbsp;public static String site_url = &nbsp;&quot;http://mywebsite.com&quot;</p>
+<p>
+	&nbsp;</p>
+<p>
+	Change &quot;GCM_SENDER_ID&quot; with your CGM Project ID</p>
+<p>
+	How you can get &nbsp;GCM_SENDER_ID instructions are given bellow.&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	Change default Keys and strings&nbsp;</p>
+<p>
+	<strong>Edit file : &nbsp;Dr App &gt; res &gt; values &gt; strings.xml</strong></p>
+<p>
+	change &nbsp;&quot; google_geo_api_key &nbsp;&quot; &nbsp;how to get this key instruction in given in next section.&nbsp;</p>
+<p>
+	<img alt="" src="assets/images/image_2.png" style="width: 100%;"></p>
+<p>
+	&nbsp;</p>
+<p>
+	change &quot;facebook_app_id&quot; &nbsp;with your app id. to create this id&nbsp;</p>
+<p>
+	Step 1 : https://developers.facebook.com/apps create new app</p>
+<p>
+	<img alt="" src="assets/images/image_11.png" style="width: 100%;"></p>
+</section>
+<section id="gcm_configuration">
+	<div class="page-header"><h3>GCM Configuration</h3><hr class="notop"></div>
+<p>
+	For sending pushnotification to all installed user you need to configure GCM with it.&nbsp;</p>
+<p>
+	Login you self at &nbsp;<strong>&quot;https://console.developers.google.com/project&quot;</strong></p>
+<p>
+	After login to google API Console you need to create your own project .&nbsp;</p>
+<p>
+	<img alt="" src="assets/images/image_5.png" style="width: 100%;"></p>
+<p>
+	Select Project you have created.&nbsp;</p>
+<p>
+	After selection project Enalbe Following services. navigate to &nbsp;&quot; Api &amp; auth &nbsp;&gt; &nbsp;API &quot;</p>
+<ul>
+	<li>
+		<a href="/project/doctor-app-1001/apiui/apiview/maps_android_backend/overview" ng-="" style="box-sizing: border-box; border: 0px; font-family: Roboto, sans-serif; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; color: rgb(66, 66, 66); text-decoration: none; cursor: pointer; letter-spacing: 0.12px; line-height: 16px;"><span ng-bind-html="api.name" style="box-sizing: border-box; border: 0px; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">Google Maps Android API v2</span></a></li>
+	<li>
+		<a href="/project/doctor-app-1001/apiui/apiview/googlecloudmessaging/overview" ng-="" style="box-sizing: border-box; border: 0px; font-family: Roboto, sans-serif; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; color: rgb(66, 66, 66); text-decoration: none; cursor: pointer; letter-spacing: 0.12px; line-height: 16px;"><span ng-bind-html="api.name" style="box-sizing: border-box; border: 0px; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">Google Cloud Messaging for Android</span></a></li>
+</ul>
+<p>
+	<img alt="" src="assets/images/image_8.png" style="width: 100%;"></p>
+<p>
+	Create Credential for your project. Click on &nbsp;&quot; &nbsp;Api &amp; auth &gt; Credentials &quot;</p>
+<p>
+	- then &quot;Create new Client ID&quot; &nbsp;this will allow you to access map permission to your app.</p>
+<p>
+	<img alt="" src="assets/images/image_4.png" style="width: 100%;"></p>
+<p>
+	SHA1 key can be fine from here :&nbsp;https://developers.google.com/drive/android/auth</p>
+<p>
+	&nbsp;</p>
+<p>
+	<strong>GCM SENDER ID&nbsp;</strong></p>
+<p>
+	<strong><img alt="" src="assets/images/image_6.png" style="width: 100%;"></strong></p>
+<p>
+	&nbsp;</p>
+<p>
+	<strong>Other Required KEYS :</strong></p>
+<p>
+	<strong><img alt="" src="assets/images/image_7.png" style="width: 100%;"></strong></p>
+<p>
+	&nbsp;</p>
+<p>
+	fore more instruction about how can configure GSM Cloud Messaging please read it :</p>
+<p>
+	http://www.androidhive.info/2012/10/android-push-notifications-using-google-cloud-messaging-gcm-php-and-mysql/</p>
+</section>
+<section id="configure_server_site">
+	<div class="page-header"><h3>Configure Server Site</h3><hr class="notop"></div>
+<p>
+	Upload source of &nbsp;&quot;Server Site&quot; folder to your server.&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	Step 1 :&nbsp;</p>
+<p>
+	For upload this source to your site you can use FTP details : login with your FTP and choose folder &quot;Server Site&quot; and upload it to your site</p>
+<p>
+	&nbsp;</p>
+<p>
+	Step 2:&nbsp;</p>
+<p>
+	Create Database with your site. &nbsp;import given &quot;doctor.sql&quot; file into your database.&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	Step 3 :</p>
+<p>
+	Change database configuration with your site.&nbsp;</p>
+<p>
+	Edit file at &nbsp;<strong>&quot;includes / global_declarations.php&quot;</strong></p>
+<p>
+	&nbsp;</p>
+<div>
+	<strong>define(&#39;HOST&#39;,&#39;localhost&#39;);</strong></div>
+<div>
+	<strong>define(&#39;DATABASE&#39;,&#39;doctors&#39;);</strong></div>
+<div>
+	<strong>define(&#39;USERNAME&#39;,&#39;root&#39;);</strong></div>
+<div>
+	<strong>define(&#39;PASSWORD&#39;,&#39;&#39;);</strong></div>
+<div>
+	<strong>define(&#39;DB_PREFIX&#39;,&#39;&#39;);</strong></div>
+<div>
+	//define(&#39;SITE_URL&#39;, (@$_SERVER[&#39;HTTPS&#39;] ? &quot;https&quot; : &quot;http&quot;) . &quot;://&quot; . $_SERVER[&#39;HTTP_HOST&#39;].&quot;/doctor/&quot;);</div>
+<div>
+	<strong>define(&#39;SITE_URL&#39;,&#39;http://localhost/doctor/&#39;);</strong></div>
+<div>
+	&nbsp;</div>
+<div>
+	// Chnage google api key with your browser key. how to get browser key all instructions are given above in GCM section&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	<strong>define(&quot;GOOGLE_API_KEY&quot;, &quot;AIzaSyBzNRFrAmUeHBXlllQ7R82Q4FFCWPvFaJE&quot;);</strong></div>
+<div>
+	&nbsp;</div>
+<div>
+	<strong><img alt="" src="assets/images/image_9.png" style="width: 100%;"></strong></div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+</section>
+<section id="how_can_use_server_site">
+	<div class="page-header"><h3>How can use Server site</h3><hr class="notop"></div>
+<p>
+	Two type of user login we are provided :&nbsp;</p>
+<ul>
+	<li>
+		Administrator</li>
+	<li>
+		Doctor</li>
+</ul>
+<p>
+	&nbsp;</p>
+<p>
+	Admistrator can manage all doctors data and all things.&nbsp;</p>
+<p>
+	Doctor can manage his own data, profile, appointment and all.</p>
+<p>
+	&nbsp;</p>
+<p>
+	Login with your url :&nbsp;</p>
+<p>
+	Administrator Login :&nbsp;</p>
+<p>
+	<img alt="" src="assets/images/image_10.png" style="width: 100%;"></p>
+<p>
+	&nbsp;</p>
+<p>
+	What Admin can do with it :</p>
+<ol>
+	<li>
+		Manage all services or categories display on application main screen</li>
+	<li>
+		Add new Doctor and manage all doctors</li>
+	<li>
+		Add Clinic to Perticular Doctor and also can manage time table of Doctor</li>
+	<li>
+		List out all registered users.&nbsp;</li>
+	<li>
+		Send Notification to register users.</li>
+</ol>
+<p>
+	&nbsp;</p>
+<p>
+	What Doctor can do with this admin :</p>
+<ol>
+	<li>
+		Can manage His profile&nbsp;</li>
+	<li>
+		Can manage his clinics details</li>
+	<li>
+		Can upload photos of clinics</li>
+	<li>
+		Manage all Appointments</li>
+</ol>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+</section>
+<section id="special_thanks">
+	<div class="page-header"><h3>Special Thanks</h3><hr class="notop"></div>
+<p>
+	I would like to say special thanks to all from where i get some code and special guidance to develope this application</p>
+<p>
+	<span style="color: rgb(0, 102, 33); font-family: arial, sans-serif; font-size: 14px; line-height: 16px; white-space: nowrap;">https://</span><b style="color: rgb(0, 102, 33); font-family: arial, sans-serif; font-size: 14px; line-height: 16px; white-space: nowrap;">developer</b><span style="color: rgb(0, 102, 33); font-family: arial, sans-serif; font-size: 14px; line-height: 16px; white-space: nowrap;">.</span><b style="color: rgb(0, 102, 33); font-family: arial, sans-serif; font-size: 14px; line-height: 16px; white-space: nowrap;">android</b><span style="color: rgb(0, 102, 33); font-family: arial, sans-serif; font-size: 14px; line-height: 16px; white-space: nowrap;">.com</span></p>
+<p>
+	http://www.androidhive.info/</p>
+<p>
+	https://github.com/Pkmmte/CircularImageView</p>
+<p>
+	https://developers.facebook.com</p>
+</section>
+<section id="support">
+	<div class="page-header"><h3>Support</h3><hr class="notop"></div>
+<p>
+	First of all thanks to interest in my products. If any problem in inegration in application then user can contact use on following email and or live reaply through skype</p>
+<p>
+	email : &#115;&#117;&#98;&#104;&#97;&#115;&#104;&#115;&#97;&#110;&#103;&#104;&#97;&#110;&#105;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</p>
+<p>
+	skype : subhash.saghani</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+</section>
+
+	</div>
+</body>
+</html>
